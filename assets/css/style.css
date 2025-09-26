@@ -1,0 +1,750 @@
+/* Header */
+.header {
+  position: relative;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #CCA8E0;
+  overflow: visible;
+  z-index: 1;
+}
+
+.header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Satisfy", cursive;
+  font-style: italic;
+  margin: 0;
+  color: white;
+  z-index: 2;
+}
+
+.left-space {
+  width: 40px;
+}
+
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.linkedin-icon {
+  color: #0A66C2;
+  text-decoration: none;
+}
+.linkedin-icon:hover {
+  color: #004182;
+}
+
+.github-icon {
+  color: black;
+  text-decoration: none;
+}
+.github-icon:hover {
+  color: #333;
+}
+
+/* Wave Pattern in Header */
+.wave-overlay {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 40' preserveAspectRatio='none'%3E%3Cpath fill='%23EFC3CA' d='M0,20 C18,40 54,0 72,20 S126,40 144,20 S198,0 216,20 S270,40 288,20 S342,0 360,20 S414,40 432,20 S486,0 504,20 S558,40 576,20 S630,0 648,20 S702,40 720,20 V40 H0 Z'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  z-index: 1;
+}
+
+/* Body */
+body {
+  background-color: #EFC3CA;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #EFC3CA;
+  padding: 40px 20px; /* Consistent padding */
+  margin: 0;
+  width: 100%;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Increased gap for better spacing */
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 300px; /* Balanced size */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #CCA8E0;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 36px;
+  color: #333;
+  font-family: "Satisfy", cursive;
+}
+
+.intro-section {
+  padding: 20px 0; /* Adjusted padding */
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: #333;
+  text-align: left;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+  padding: 20px 0; /* Adjusted padding */
+}
+
+/* Base Button Styles */
+.hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+/* Primary Button (Resume) */
+.hero-button.resume-button {
+  background-color: #CCA8E0;
+  color: white;
+  border: 2px solid #CCA8E0;
+}
+
+.hero-button.resume-button:hover {
+  background-color: #B58ED1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Secondary Button (Email) */
+.hero-button.email-button {
+  background-color: transparent;
+  color: #CCA8E0;
+  border: 2px solid #CCA8E0;
+}
+
+.hero-button.email-button:hover {
+  background-color: #CCA8E0;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills Button Container */
+.skills-button-container {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%); /* Fixed transform for proper centering */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Base Skills Button Styles */
+.skills-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.skills-button-1 {
+  background-color: #BEDEB1;
+  color: black;
+  border: 2px solid #9CC78B;
+}
+
+.skills-button-1:hover {
+  background-color: #6C945C;
+  color: white; /* Fixed hover color */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-button-2 {
+  background-color: #DFD769;
+  color: black;
+  border: 2px solid #E6CB56;
+}
+
+.skills-button-2:hover {
+  background-color: #E6CB56;
+  color: white; /* Fixed hover color */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-button-3 {
+  background-color: #DD6881;
+  color: black;
+  border: 2px solid #DB2690;
+}
+
+.skills-button-3:hover {
+  background-color: #DB2690;
+  color: white; /* Fixed hover color */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-button-4 {
+  background-color: #649BDB;
+  color: black;
+  border: 2px solid #0D91B3;
+}
+
+.skills-button-4:hover {
+  background-color: #0D91B3;
+  color: white; /* Fixed hover color */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about {
+  background-color: #E3F3C9; /* Pastel green */
+  padding: 40px 20px; /* Consistent padding */
+  margin: 0;
+  width: 100%; /* Full width to remove pink borders */
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px; /* Increased for better readability */
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Satisfy", cursive;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Projects Section */
+project-card {
+  position: relative;
+  border: 5px solid transparent;
+  background: #FFFFFF padding-box; /* Ensures background doesn’t overlap border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 5px solid transparent;
+  border-radius: 15px;
+  background: repeating-linear-gradient(
+    45deg,
+    #F4C4D1, /* Soft pink for "petals" */
+    #F4C4D1 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  z-index: -1;
+}
+.projects h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: "Satisfy", cursive;
+}
+
+.project-cards {
+  display: flex; /* Flexbox for row layout */
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+  flex-wrap: wrap; /* Wrap to next line if needed */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Project Card */
+.project-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; /* Fixed width for consistency */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  font-size: 24px;
+  color: #2E7D32; /* Darker green for titles */
+  margin-bottom: 10px;
+  font-family: Roboto, sans-serif;
+}
+
+.project-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-family: Roboto, sans-serif;
+}
+
+.project-card strong {
+  color: #2E7D32;
+}
+
+/* Unique Colors for Each Card */
+.project-card-1 {
+  background-color: #D4E4D1; /* Light mint green */
+}
+
+.project-card-2 {
+  background-color: #E8D4E4; /* Soft lavender */
+}
+
+.project-card-3 {
+  background-color: #F4E1D1; /* Warm peach */
+}
+
+.project-card-4 {
+  background-color: #D1E4E0; /* Pale teal */
+}
+
+.project-card-5 {
+  background-color: #E4D1E8; /* Light lilac */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .left-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .intro-section {
+    padding: 10px 0;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .hero-button {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .skills-button-container {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .skills-button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .about {
+    padding: 20px 10px;
+  }
+
+  .about-content {
+    font-size: 14px;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .projects {
+    padding: 20px 10px;
+    background-color:  #B3E6F3;
+    
+  }
+
+  .project-cards {
+    flex-direction: column; /* Stack cards on mobile */
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+  }
+
+  .project-card h3 {
+    font-size: 20px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+  }
+}
+
+/* Skills Section */
+.skills {
+  background-color: #E3F3C9; /* Pastel green */
+  padding: 40px 20px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+  font-family: "Satisfy", cursive;
+}
+
+/* Skills Box Container */
+.skills-box {
+  position: relative; /* For positioning the bow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px; /* Square dimensions */
+  width: 100%;
+  margin: 40px auto 20px; /* Increased top margin for bow */
+  border: 10px solid #f4c2c2; /* Soft pink border */
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Bow Elements */
+.skills-box::before,
+.skills-box::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  z-index: 1;
+}
+
+/* Bow Loops */
+.skills-box::before {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 25px;
+  background: #f4c2c2; /* Soft pink */
+  border-radius: 50% 50% 0 0;
+  box-shadow: -20px 0 0 -5px #f4c2c2, 20px 0 0 -5px #f4c2c2; /* Left and right loops */
+}
+
+/* Bow Knot */
+.skills-box::after {
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background: #f4c2c2;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Bow Tails */
+.skills-box .bow-tail-left,
+.skills-box .bow-tail-right {
+  content: '';
+  position: absolute;
+  top: -5px;
+  width: 30px;
+  height: 40px;
+  background: #f4c2c2;
+  z-index: 0;
+}
+
+.skills-box .bow-tail-left {
+  left: calc(50% - 35px);
+  transform: rotate(-30deg);
+  border-radius: 0 0 5px 10px;
+}
+
+.skills-box .bow-tail-right {
+  left: calc(50% + 5px);
+  transform: rotate(30deg);
+  border-radius: 0 0 10px 5px;
+}
+
+/* Add Pseudo-elements for Tails via ::before and ::after on a Wrapper */
+.skills-box::before {
+  --tail-offset: 30px;
+}
+
+/* Use ::after for the second tail */
+.skills-box::after {
+  box-shadow: none; /* Remove previous shadow */
+}
+
+/* Add Tails with Additional Pseudo-elements */
+.skills-box {
+  --bow-color: #f4c2c2;
+}
+
+.skills-box::before {
+  /* Loops */
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 25px;
+  background: var(--bow-color);
+  border-radius: 50% 50% 0 0;
+  box-shadow: -20px 0 0 -5px var(--bow-color), 20px 0 0 -5px var(--bow-color);
+}
+
+/* Knot */
+.skills-box::after {
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background: var(--bow-color);
+  border-radius: 50%;
+}
+
+/* Add Tails with Additional Pseudo-elements */
+.skills-box .bow-tail-left::before,
+.skills-box .bow-tail-right::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  width: 30px;
+  height: 40px;
+  background: var(--bow-color);
+}
+
+.skills-box .bow-tail-left::before {
+  left: calc(50% - 35px);
+  transform: rotate(-30deg);
+  border-radius: 0 0 5px 10px;
+}
+
+.skills-box .bow-tail-right::after {
+  left: calc(50% + 5px);
+  transform: rotate(30deg);
+  border-radius: 0 0 10px 5px;
+}
+
+/* Create the Tail Elements */
+.skills-box .bow-tail-left,
+.skills-box .bow-tail-right {
+  position: absolute;
+  z-index: 0;
+}
+
+.skills-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills Content Inside the Box */
+.skills-content {
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+/* Individual Skill Category */
+.skill-category {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.skill-category:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* Experiences Section */
+.experiences {
+  background-color: #f5deb3; /* Pastel green */
+  padding: 40px 20px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.experiences h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+  font-family: "Satisfy", cursive;
+}
+
+/* Experience Accordion */
+.experience-accordion {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Experience Panel */
+.experience-panel {
+  margin-bottom: 15px;
+  padding-top: 20px;
+  border: 5px solid #f4c2c2; /* Coquette border */
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #E2A38B; /* Light parchment */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.experience-panel:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Panel Header */
+.panel-header {
+  background-color: #E8D4E4; /* Soft lavender */
+  padding: 15px;
+  font-size: 20px;
+  color: #5C4033; /* Vintage brown */
+  font-family: "Georgia", serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.panel-header:hover {
+  background-color: #D4E4D1; /* Light mint on hover */
+}
+
+.toggle-icon {
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+/* Panel Content */
+.panel-content {
+  padding: 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.panel-content p.duration {
+  font-size: 16px;
+  color: #8B4513; /* Brownish */
+  margin-bottom: 10px;
+  font-style: italic;
+  font-family: "Georgia", serif;
+}
+
+.panel-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.panel-content li {
+  font-size: 16px;
+  color: #5C4033;
+  line-height: 1.6;
+  font-family: "Georgia", serif;
+  margin-bottom: 5px;
+}
+
+/* Bow Accent (Top of Each Panel) */
+.experience-panel::before,
+.experience-panel::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.experience-panel::before {
+  width: 40px;
+  height: 20px;
+  background: #f4c2c2;
+  border-radius: 50% 50% 0 0;
+  box-shadow: -15px 0 0 -4px #f4c2c2, 15px 0 0 -4px #f4c2c2;
+}
+
+.experience-panel::after {
+  top: -5px;
+  width: 15px;
+  height: 15px;
+  background: #f4c2c2;
+  border-radius: 50%;
+  z-index: 2;
+}
+
